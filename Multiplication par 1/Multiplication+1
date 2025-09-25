@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+int main()
+{
+int a;
+int b;
+int S = 0;
+int n;
+printf("ENTRER LA VALEUR DU PREMIER ÉLÉMENT \n DU PRODUIT : \t");
+scanf("%d", &a);
+printf("ENTRER LA VALEUR DU DEUXIÈME ÉLÉMENT \n DU PRODUIT : \t");
+scanf("%d", &b);
+n = a * b;
+for ( int i = 0; i < n ; i++){
+S = S + 1 ;
+}
+printf("\n LE PRODUIT DES NOMBRES EST DE : \n");
+for ( int i = 0; i < n - 1; i++){
+printf("1+");
+}
+printf("1 = %d", S);
+return 0;
+}
