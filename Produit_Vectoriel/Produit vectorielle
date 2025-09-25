@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+    int A[3];
+    int B[3];
+    int C[3];
+    printf("_PRODUIT VECTORIEL DE DEUX VECTEURS 3D_\n\n");
+    printf("\nENTRER LES COMPOSANTES DU VECTEUR A : \n");
+    for (int i = 0; i < 3; i++) {
+        printf("A[%d] = \t", i);
+        scanf("%d", &A[i]);
+    }
+    printf(" \t\tA : \n");
+    for (int i = 0; i < 3; i++) {
+        printf("\t\t%d\n", A[i]);
+    }    
+    printf("\n");
+    printf("ENTRER LES COMPOSANTES DU VECTEUR B : \n");
+    for (int i = 0; i < 3; i++) {
+        printf("B[%d] = \t", i);
+        scanf("%d", &B[i]);
+    }
+    printf(" \t\tB : \n");
+    for (int i = 0; i < 3; i++) {
+        printf("\t\t%d\n", B[i]);
+    }    
+    C[0] = A[1]*B[2] - A[2]*B[1];
+    C[1] = A[2]*B[0] - A[0]*B[2];
+    C[2] = A[0]*B[1] - A[1]*B[0];
+    printf("\n LE PRODUIT VECTORIELLE DE A ET B \n DONNE C : \n\t%d  \n\t%d \n\t%d\n", C[0], C[1], C[2]);
+    return 0;
+}

@@ -1,0 +1,31 @@
+#include<stdio.h>
+
+int main () {
+    int tab[100],i,n;
+    printf("Entrer le nombre d'éléments du tableau \t");
+    scanf("%d",&n);
+    if (n>100 || n<0 ){
+        do {
+            printf("Entrer une valeur correct (n<100 ou n>0)\t");
+            scanf("%d",&n);
+        }while(n>100);
+    }
+    for (i=0; i<n; i++) {
+         printf("Entrer la valeur %d\t",i+1);
+        scanf("%d",&tab[i]);
+    }
+    printf("Tableau : \n");
+    for (i=0; i<n; i++) {
+    printf("%d\t",tab[i]);
+    }
+    printf("\n");
+    printf("Tableau inverse \n");
+    for (i=n-1;i>=0;i--) {
+    printf("%d\t",tab[i]);
+    }
+    
+    return 0;
+    
+
+
+}
